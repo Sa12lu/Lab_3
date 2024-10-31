@@ -76,6 +76,13 @@
             border: 1px solid black;
             padding: 8px;
         }
+
+        /* Style for hobby images */
+        .hobby-images img {
+            width: 150px;
+            height: auto;
+            margin: 10px;
+        }
     </style>
 </head>
 
@@ -177,13 +184,14 @@
                 otherContent.style.display = 'block';
 
                 if (section === 'hobby') {
-                    otherContent.innerHTML =
-                     "<p>I love drawing.\nHere is drawing that i made >u<</p>";
-                     <div class="hobby-images">
+                    otherContent.innerHTML = `
+                        <p>I love drawing.\nHere are some drawings that I made >u<</p>
+                        <div class="hobby-images">
                             <img src="hobby(1).jpeg" alt="Hobby - Drawing 1">
                             <img src="hobby(2).jpeg" alt="Hobby - Drawing 2">
                             <img src="hobby(3).jpeg" alt="Hobby - Drawing 3">
                         </div>
+                    `;
                 } else if (section === 'uniLife') {
                     otherContent.innerHTML = "<p>I'm fine.</p>";
                 }
@@ -192,5 +200,4 @@
     </script>
 
 </body>
-
 </html>
